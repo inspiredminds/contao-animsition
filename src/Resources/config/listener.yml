@@ -1,0 +1,3 @@
+services:
+    inspiredminds_contao_animsition.listener.inject:
+        class: InspiredMinds\ContaoAnimsition\EventListener\InjectAnimsition

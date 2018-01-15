@@ -1,0 +1,13 @@
+<script>
+(function($)
+{
+  var options = <?= json_encode($this->options); ?>;
+  var options = $.extend({
+    linkElement: 'a:not([target="_blank"]):not([href^="#"]):not([data-lightbox])',
+    inClass: false,
+    outClass: false
+  }, options);
+  console.log(options);
+  $('#wrapper').addClass('animsition').animsition(options);
+})(jQuery);
+</script>
