@@ -42,7 +42,7 @@ class InjectAnimsition
 	 * @param  PageModel
 	 * @return array
 	 */
-	protected function getOptions(PageModel $objPage = null)
+	public function getOptions(PageModel $objPage = null)
 	{
 		if (null !== $objPage)
 		{
@@ -84,11 +84,11 @@ class InjectAnimsition
 
 		if ($arrAnimsitionOptions)
 		{
-			$GLOBALS['TL_CSS'][] = 'bundles/contaoanimsition/animsition.min.css';
-			$GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaoanimsition/animsition.min.js';
 			$objTemplate = new FrontendTemplate('animsition');
 			$objTemplate->options = $arrAnimsitionOptions;
 			$GLOBALS['TL_BODY'][] = $objTemplate->parse();
+			$GLOBALS['TL_CSS'][] = 'bundles/contaoanimsition/animsition.min.css';
+			$GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaoanimsition/animsition.min.js';
 		}
 	}
 }

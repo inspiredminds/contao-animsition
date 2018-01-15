@@ -61,15 +61,6 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['animsitionOutDuration'] = array
 	'sql' => ['type'=>'integer', 'nullable'=>true],
 );
 
-/*
-$GLOBALS['TL_DCA']['tl_page']['fields']['animsitionOverlay'] = array
-(
-	'label' => ['Overlay', 'Definiert ob der Übergang ein Overlay ist.'],
-	'inputType' => 'checkbox',
-	'eval' => ['tl_class' => 'clr'],
-	'sql' => ['type' => 'boolean', 'default' => 0],
-);
-*/
 
 /**
  * Palettes
