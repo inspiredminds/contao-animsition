@@ -1,6 +1,5 @@
 <script>
-(function($)
-{
+(function($){
   $('#wrapper').addClass('animsition').animsition($.extend({
     linkElement: 'a:not([target="_blank"]):not([href^="#"]):not([data-lightbox])',
   }, <?= json_encode($this->options) ?>));
